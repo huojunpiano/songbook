@@ -3,8 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1 歌名 - 歌谱</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>1</title>
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #e6e6fa, #dcdcdc);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .back-link {
+            margin-bottom: 10px; /* 缩小距离 */
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-link a:hover {
+            background-color: #ddd;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-description {
+            margin-top: 10px; /* 图片和文本框之间的距离 */
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-description h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.5em;
+            color: #333;
+            text-align: center; /* 标题居中显示 */
+        }
+
+        .image-description p {
+            margin: 0;
+            color: #000; /* 将字体颜色设置为黑色 */
+            text-indent: 2em; /* 默认缩进2个字符 */
+            text-align: left; /* 正文左对齐 */
+        }
+
+        .image-description p.no-indent {
+            text-indent: 0; /* 无缩进 */
+        }
+    </style>
 </head>
 <body class="song-background">
     <div class="container">
@@ -12,7 +87,13 @@
             <a href="javascript:void(0);" onclick="history.back();">⬅ 返回上一页</a>
         </div>
         <!-- 第一张图片 -->
-        <img src="../images/songbook1/song1.jpg" alt="1 歌名 歌谱 第1页" style="max-width: 100%; height: auto;">
+        <img src="../images/songbook1/song1.jpg" alt="第1页">
+        <!-- 新的文本框 -->
+        <div class="image-description">
+            <h2>和弦理解</h2>
+            <p>这是一个<strong>加粗</strong>并且缩进2个字符的段落。</p>
+            <p class="no-indent">这是一个不需要缩进的段落。</p>
+        </div>
     </div>
 </body>
 </html>
